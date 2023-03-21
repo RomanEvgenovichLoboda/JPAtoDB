@@ -1,4 +1,4 @@
-package JPASpring.JPAtoDB;
+package JPASpring.JPAtoDB.Model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -14,7 +14,11 @@ public class User {
     private String name;
 
     private String email;
-
+    public User(){}
+    public User(String name,String mail){
+        this.name=name;
+        this.email=mail;
+    }
     public Integer getId() {
         return id;
     }
